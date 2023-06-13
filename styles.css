@@ -71,5 +71,6 @@ nav ul li:hover > .dropdown-content {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: var(--turquoise);
+  background-color: var(--dark-cyan);
+  color: var(--maize);
 }
