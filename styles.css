@@ -25,13 +25,13 @@ body {
 
 /* Navigation Styles */
 header {
-  background-color: var(--maize);
+  background-color: var(--dark-cyan);
   padding: 20px;
 }
 
 h1 {
   margin: 0;
-  color: var(--dark-cyan);
+  color: var(--maize);
 }
 
 nav ul {
@@ -54,7 +54,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus,
 nav ul li a:active {
-  background-color: var(--turquoise);
+  background-color: var(--maize);
   transition: background-color 0.3s ease; /* Add transition effect */
 }
 
