@@ -81,7 +81,7 @@ nav ul li .dropdown-content a {
 nav ul li .dropdown-content a:hover,
 nav ul li .dropdown-content a:focus,
 nav ul li .dropdown-content a:active {
-  background-color: var(--turquoise);
+  background-color: var(--maize);
   transition: background-color 0.3s ease; /* Add transition effect */
 }
 
