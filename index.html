@@ -81,25 +81,24 @@
                     var current = words[wordIndex];
 
                     if (isDeleting) {
-                        el.textContent = current.substring(0, charIndex - 1);
+                        el.textContent = current.substring(0, charIndex);
                         charIndex--;
+                        if (charIndex === 0) {
+                            isDeleting = false;
+                            wordIndex = (wordIndex + 1) % words.length;
+                            setTimeout(type, pauseStart);
+                            return;
+                        }
                         setTimeout(type, eraseSpeed);
                     } else {
                         el.textContent = current.substring(0, charIndex + 1);
                         charIndex++;
                         if (charIndex === current.length) {
+                            isDeleting = true;
                             setTimeout(type, pauseEnd);
                             return;
                         }
                         setTimeout(type, typeSpeed);
-                    }
-
-                    if (!isDeleting && charIndex === current.length) {
-                        isDeleting = true;
-                    } else if (isDeleting && charIndex === 0) {
-                        isDeleting = false;
-                        wordIndex = (wordIndex + 1) % words.length;
-                        setTimeout(type, pauseStart);
                     }
                 }
 
