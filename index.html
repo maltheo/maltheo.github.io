@@ -10,7 +10,7 @@
         <header>
             <h1>Marios Theocharopoulos</h1>
             <p class="tagline">
-                AI/ML · Drones · Blender · Plugins · Experiments
+                <span id="typewriter"></span><span class="cursor"></span>
             </p>
         </header>
 
@@ -58,5 +58,53 @@
                 </p>
             </section>
         </div>
+
+        <script>
+            (function () {
+                var words = [
+                    'AI/ML',
+                    'Drones',
+                    'Blender',
+                    'Plugins',
+                    'Experiments'
+                ];
+                var el = document.getElementById('typewriter');
+                var wordIndex = 0;
+                var charIndex = 0;
+                var isDeleting = false;
+                var typeSpeed = 120;
+                var eraseSpeed = 60;
+                var pauseEnd = 1200;
+                var pauseStart = 400;
+
+                function type() {
+                    var current = words[wordIndex];
+
+                    if (isDeleting) {
+                        el.textContent = current.substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(type, eraseSpeed);
+                    } else {
+                        el.textContent = current.substring(0, charIndex + 1);
+                        charIndex++;
+                        if (charIndex === current.length) {
+                            setTimeout(type, pauseEnd);
+                            return;
+                        }
+                        setTimeout(type, typeSpeed);
+                    }
+
+                    if (!isDeleting && charIndex === current.length) {
+                        isDeleting = true;
+                    } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        wordIndex = (wordIndex + 1) % words.length;
+                        setTimeout(type, pauseStart);
+                    }
+                }
+
+                type();
+            })();
+        </script>
     </body>
 </html>

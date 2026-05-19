@@ -1,101 +1,24 @@
-/* Home page styles */
-
-header {
-  padding: 30px 20px 20px;
-}
-
-header h1 {
-  margin: 0;
-  color: var(--folly);
-  font-size: 2em;
-}
+/* Typewriter tagline styles */
 
 .tagline {
   color: var(--verdigris);
   margin: 5px 0 0;
   font-size: 0.95em;
   letter-spacing: 0.5px;
+  min-height: 1.5em;
 }
 
-.intro {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--verdigris);
-  margin-bottom: 30px;
+.tagline .cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background-color: var(--verdigris);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 0.8s step-end infinite;
 }
 
-.intro p {
-  color: var(--dark-cyan);
-  font-size: 1.1em;
-  line-height: 1.7;
-}
-
-.projects-grid {
-  margin-bottom: 40px;
-}
-
-.projects-grid h2,
-.blog-preview h2,
-.about h2 {
-  color: var(--dark-cyan);
-  margin-bottom: 15px;
-  border-bottom: 1px solid var(--verdigris);
-  padding-bottom: 5px;
-}
-
-.project-card {
-  background-color: rgba(113, 189, 187, 0.08);
-  border-left: 3px solid var(--verdigris);
-  padding: 15px 20px;
-  margin-bottom: 12px;
-  transition: background-color 0.3s ease;
-}
-
-.project-card:hover {
-  background-color: rgba(113, 189, 187, 0.15);
-}
-
-.project-card h3 {
-  margin: 0 0 8px;
-}
-
-.project-card h3 a {
-  color: var(--dark-cyan);
-  text-decoration: none;
-}
-
-.project-card h3 a:hover {
-  color: var(--persian-green);
-}
-
-.project-card p {
-  color: var(--verdigris);
-  margin: 0 0 8px;
-  font-size: 0.95em;
-}
-
-.project-card .count {
-  color: var(--verdigris);
-  font-size: 0.8em;
-  opacity: 0.7;
-}
-
-.blog-preview {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--verdigris);
-}
-
-.empty-state {
-  color: var(--verdigris);
-  font-style: italic;
-  opacity: 0.7;
-}
-
-.about {
-  margin-bottom: 20px;
-}
-
-.about p {
-  color: var(--dark-cyan);
-  line-height: 1.7;
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
