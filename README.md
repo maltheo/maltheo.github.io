@@ -1,6 +1,6 @@
 # maltheo.github.io
 
-A personal site for AI/ML projects, drone development, Blender 3D workflows, plugins, and other experiments.
+A personal site for AI/ML projects, drone-related dev projects, Blender 3D workflows, plugins, and other experiments.
 
 ## Sections
 
