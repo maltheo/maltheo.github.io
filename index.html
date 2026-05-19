@@ -2,43 +2,92 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
+  <title>maltheo</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <header>
-    <h1>Test</h1>
+    <h1>maltheo</h1>
+    <p class="tagline">AI/ML · Drones · Blender · Plugins · Experiments</p>
   </header>
-  
+
   <nav>
     <ul>
+      <li><a href="index.html" class="active">Home</a></li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Explorations</a>
+        <a href="#" class="dropbtn">Projects</a>
         <div class="dropdown-content">
-          <a href="explorations.html">Optimisation</a>
-          <a href="#">Exploration 2</a>
+          <a href="projects/index.html">All Projects</a>
+          <a href="projects/ai-ml/index.html">AI / ML</a>
+          <a href="projects/drones/index.html">Drones</a>
+          <a href="projects/blender/index.html">Blender 3D</a>
+          <a href="projects/plugins/index.html">Plugins</a>
+          <a href="projects/other/index.html">Other</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Experiments</a>
+        <a href="#" class="dropbtn">Blog</a>
         <div class="dropdown-content">
-          <a href="experiments.html">Experiment 1</a>
-<!--      <a href="#">Experiment 2</a>
-          <a href="#">Experiment 3</a> -->
+          <a href="blog/index.html">All Posts</a>
+          <a href="blog/100-days/index.html">100 Days of Code</a>
         </div>
       </li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Tools</a>
-        <div class="dropdown-content">
-          <a href="experiments.html">Plchldr</a>
-        </div>
-      </li>
+      <li><a href="explorations/index.html">Explorations</a></li>
+      <li><a href="experiments/index.html">Experiments</a></li>
     </ul>
   </nav>
-  
+
   <div class="container">
-    <h2>Test</h2>
-    <p>Test content.</p>
+
+    <section class="intro">
+      <p>Welcome. This is a collection of work across AI/ML, drone development, Blender 3D workflows, plugins, and various side projects.</p>
+    </section>
+
+    <section class="projects-grid">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3><a href="projects/ai-ml/">AI / ML</a></h3>
+        <p>Neural networks, inference pipelines, model training, and experimental architectures.</p>
+        <span class="count">0 projects</span>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="projects/drones/">Drones</a></h3>
+        <p>Flight controllers, computer vision on UAVs, waypoint navigation, and hardware hacking.</p>
+        <span class="count">0 projects</span>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="projects/blender/">Blender 3D</a></h3>
+        <p>Procedural workflows, add-on development, rendering pipelines, and asset creation.</p>
+        <span class="count">0 projects</span>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="projects/plugins/">Plugins</a></h3>
+        <p>Extensions and tools for existing platforms — VS Code, Blender, Figma, and more.</p>
+        <span class="count">0 projects</span>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="projects/other/">Other</a></h3>
+        <p>Miscellaneous side projects, experiments, and things that don't fit elsewhere.</p>
+        <span class="count">0 projects</span>
+      </div>
+    </section>
+
+    <section class="blog-preview">
+      <h2>Latest from the Blog</h2>
+      <p class="empty-state">No posts yet. First entry coming soon.</p>
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>Developer and tinkerer working at the intersection of AI, creative tools, and hardware. Building things that connect code with the physical and visual worlds.</p>
+    </section>
+
   </div>
 </body>
 </html>

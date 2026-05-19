@@ -1,0 +1,41 @@
+/* Blog listing styles */
+
+.category h2 {
+  color: var(--dark-cyan);
+  margin-top: 30px;
+  border-bottom: 1px solid var(--verdigris);
+  padding-bottom: 5px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.project-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(113, 189, 187, 0.2);
+}
+
+.project-list li a {
+  color: var(--dark-cyan);
+  text-decoration: none;
+}
+
+.project-list li a:hover {
+  color: var(--persian-green);
+}
+
+.project-list li .date {
+  color: var(--verdigris);
+  font-size: 0.85em;
+  margin-right: 10px;
+}
+
+.project-list li.empty {
+  color: var(--verdigris);
+  font-style: italic;
+  opacity: 0.6;
+  border: none;
+}

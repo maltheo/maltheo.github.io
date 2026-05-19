@@ -1,0 +1,67 @@
+/* Project page styles */
+
+.project-meta {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: var(--dark-cyan);
+  color: var(--mint-cream);
+  font-size: 0.85em;
+  border-radius: 3px;
+}
+
+.project-body {
+  line-height: 1.7;
+}
+
+.project-body h2 {
+  color: var(--dark-cyan);
+  margin-top: 30px;
+  border-bottom: 1px solid var(--verdigris);
+  padding-bottom: 5px;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.gallery img {
+  max-width: 100%;
+  border: 1px solid var(--verdigris);
+  border-radius: 4px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.links a {
+  color: var(--persian-green);
+  text-decoration: underline;
+}
+
+.links a:hover {
+  color: var(--maize);
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid var(--verdigris);
+  color: var(--verdigris);
+  font-size: 0.85em;
+  text-align: center;
+}
